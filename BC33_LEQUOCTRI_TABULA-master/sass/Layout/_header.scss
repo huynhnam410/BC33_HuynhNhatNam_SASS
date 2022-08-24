@@ -1,0 +1,131 @@
+.header {
+  background-image: url(../../images/yellow_top_wave_01.png);
+      background-size: cover;
+      background-position: center;
+  background-color: rgba(#fff, 0.3);
+padding-bottom: 125px;
+  width: 100%;
+  z-index: 10;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      
+    }
+    @media only screen and (max-width:1020px) {
+      background-color: $color-c2;
+      margin-bottom: 50px;
+    }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+    
+      @media only screen and (max-width:1020px) {
+        width: 10%;
+      }
+      @media only screen and (max-width:765px) {
+        width: 20%;
+        margin-bottom: 35px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .navbar {
+      width: 75%;
+      @media only screen and (max-width:765px) {
+        display:none;
+      }
+      @media only screen and (max-width:1020px) {
+        display: none;
+      }
+      @media only screen and (max-width:1250px) {
+        display: none;
+      }
+      .nav-menu {
+        .navbar-menu {
+          ul {
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            margin-bottom: 0;
+            li {
+              list-style: none;
+              padding: 0px 25px;
+              a {
+                text-decoration: none;
+                color: $color-c1;
+                font-size: $fs-sm;
+                font-weight: $fw-semibold;
+              }
+            }
+          }
+        }
+      }
+      .navbar-contact {
+        display: flex;
+        justify-items: center;
+        width: 35%;
+        .contact-phone {
+          background-color: $color-c4;
+          border-radius: 30px;
+          cursor: pointer;
+          color: $color-c2;
+          position: relative;
+          display: inline-block;
+          padding:10px 5px;
+           &:hover {
+            background-color: $color-c2;
+            border: solid 1px $color-c4;
+            color: $color-c4;
+            transition: ease-out;
+            transition-duration: 0.3s;
+          } 
+
+          
+          a {
+            text-decoration: none;
+            color: $color-c2;
+            font-weight: $fw-semibold;
+            font-size: $fs-sm;
+            padding: 14px 19px;
+            &::before {
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 100%;
+              background-color: $color-c2;
+              transform: scale(0,1);
+              transition: transform 0.5s;
+            }
+            &:hover {
+              color:$color-c4;
+            }
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      .contact-social {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        .social-icon {
+          padding: 0px 5px;
+          a {
+            text-decoration: none;
+            color: $color-c1;
+            i {
+              font-size: $fs-sm;
+              &:hover {
+                color: $color-c4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

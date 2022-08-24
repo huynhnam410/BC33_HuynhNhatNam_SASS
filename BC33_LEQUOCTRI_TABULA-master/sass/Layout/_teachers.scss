@@ -1,0 +1,82 @@
+.teachers {
+  background-color: $color-c5;
+  background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1020px) {
+      width: 95%;
+    }
+    @media only screen and (max-width: 765px) {
+      display: block;
+      width: 95%;
+    }
+
+    .teacher {
+      width: calc(100% / 4.5);
+      margin-bottom: 20px;
+
+      @media only screen and (max-width: 1020px) {
+        width: 47%;
+      }
+      @media only screen and (max-width: 765px) {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+      }
+
+      &:hover {
+        box-shadow: 0px 8px 24px -9px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 8px 24px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 24px -9px rgba(0,0,0,0.75);
+      }
+
+      .teacher-img {
+        overflow: hidden;
+        img {
+          width: 100%;
+          border-radius: 8px 8px 0px 0px;
+          
+          &:hover {
+            transform: scale(1.1);
+            transition: transform 1.5s;
+            overflow: hidden;
+          }
+        }
+      }
+      .teacher-info {
+        text-align: center;
+        border-radius: 0px 0px 8px 8px;
+        background-color: $color-c2;
+        align-items: center;
+        padding: 25px;
+
+        .teacher-country-name {
+          span {
+            font-size: $fs-xs;
+            color: $color-c3;
+            font-weight: $fw-semibold;
+          }
+          p {
+            font-size: $fs-xl;
+            color: $color-c1;
+            font-weight: $fw-semibold;
+          }
+        }
+        .teacher-professional {
+          p {
+            font-size: $fs-md;
+            color: $color-c1;
+            font-weight: $fw-regular;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+* {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ .tittle span{
+   font-size: 14px;
+ }
+.tittle h2{
+font-size: 50px;
+margin-bottom: 20px;
+}
+.tittle p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+
+.container{
+  max-width: 1280px ;
+  
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 80px
+  ;
+
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.header .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.header .navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 30px;
+
+}
+.header .navbar a :hover{
+  color: #e62b4a;
+}
+
+.header .container {
+  display: flex;
+  /* flex-direction: row; ngag ,trai > phai */
+  /* flex-direction :column */
+  /* flex-direction :row-reverse */
+  /* flex-direction :column-reverse */
+  flex-direction: row;
+  justify-content:space-between ;
+  /* chinh vi tri theo truc chinh */
+  align-items:center ;
+  /* chinh theo truc phu */
+}
+
+
+.carousel {
+  
+  color: white;
+  height: 400px;
+}
+
+.carousel h2 {
+  font-weight: 700;
+}
+
+.carousel a {
+  box-sizing: border-box;
+  background-color: #e62b4a;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #e62b4a;
+  font-size: 16px;
+  
+}
+   
+
+.carousel {
+  background-image: url(/meipaly-website/img/home_slider.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.service {
+  color: white;
+  padding: 80px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  
+}
+
+.service .tittle span {
+  text-align: center;
+  color: #e62b4a;
+  
+}
+.service .tittle{
+  text-align: center;
+}
+
+.service .main .row {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch; */
+  margin: 0 -15px;
+}
+
+.service .main .col {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.service .main .item {
+  background-color: rgb(230, 220, 220);
+  color: black;
+  /* padding: 50px 0;
+  height: 100%; */
+  height: 150px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+.statistic .row .item {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+ 
+.statistic .row{
+  display: flex;
+  
+
+}
+.statistic .col {
+  width: 25%;
+}
+
+.news {
+  padding: 80px 0;
+}
+
+.news .tittle {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.news .tittle span{
+  color: #8888;
+}
+.news .tittle p{
+  color: black;
+}
+
+.news .main .row {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  /* grid-template-rows: ; */
+  /* gap: 30px; */
+  /* row-gap: ; */
+  /* column-gap: ; */
+}
+  
+.news .main .item-1{
+  grid-column: 1/ span 2;
+  grid-row: 1 / span 2;
+}
+
+.news .main .item-10{
+  grid-column: 3/ span 2;
+  grid-row: 3/ span 2;
+}
+
+
+
+.news .main .item img{
+  width: 100%;
+}
+
+news .main .item{
+  position: relative;
+
+}
+ 
+.news .main .item .info{
+  background-color: rgba(230, 43, 74, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column ;
+  justify-content: space-between;
+
+}
+
+.contact {
+  padding: 80px 0;
+  text-align: center;
+
+}
+
+
+.contact .main .container{
+  display: flex;
+}
+
+.contact .main .map{
+  width: 60%;
+}
+
+.contact .main {
+  width: 40%;
+}

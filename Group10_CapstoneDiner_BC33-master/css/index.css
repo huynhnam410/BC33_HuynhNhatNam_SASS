@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+section {
+  padding-top: 100px;
+}
+/****************************************Header****************************************/
+header {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      to right,
+      rgb(236, 98, 6, 0.9),
+      rgba(5, 3, 0, 0.2)
+    ),
+    url("../../img/banner1.jpg");
+}
+.header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.header .container i,
+.header .container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header .header-left {
+  color: #ffffff;
+}
+.header .header-left h2 {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.header .tittle-description {
+  width: 45%;
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+.header .tittle-description h3 {
+  font-size: 54px;
+  font-weight: 600;
+}
+.header .header-left .tittle-description a {
+  padding: 15px 40px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.header .learn-more a:hover i,
+.header .tittle-description a:hover {
+  color: #ff6600;
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+
+.header .header-right {
+  display: flex;
+  line-height: 100px;
+}
+.header .header-right .navbar-plus a {
+  margin-right: 30px;
+  font-weight: 600;
+}
+.header .header-right .navbar-plus a:hover {
+  color: #ff6600;
+  transition: all 0.5s;
+}
+.header-right .research {
+  position: relative;
+  margin-right: 10px;
+}
+.header-right .research input {
+  font-size: 16px;
+  line-height: 50px;
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.header-right .research input:focus {
+  border-color: none;
+}
+.header-right .research .icon-search {
+  position: absolute;
+  color: #000000;
+  top: 40px;
+  left: 210px;
+  line-height: 20px;
+}
+.header-right .switch-mode {
+  font-size: 20px;
+}
+.header .page-active {
+  color: #ff6600 !important;
+}
+.header .navbar-toggler {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  display: none;
+}
+/****************************************EndHeader****************************************/
+
+
+
+/****************************************Introduce****************************************/
+.introduce .row .intro-left h3 {
+    font-family: "Pacifico", cursive;
+    color: #ff6600;
+    font-size: 20px;
+    font-weight: 400;
+}
+.introduce .row .intro-left h4 {
+    font-weight: 600;
+    font-size: 40px;
+}
+.introduce .intro-right .item {
+    font-size: 18px;
+    color: #161c2db3;
+}
+/****************************************EndIntroduce****************************************/
+.order .order-right{
+  background-color: #ff6600;;
+}
+.order .order-left{
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+
+}
+.order .order-left::before{
+  content: "";
+  background: rgb(16 15 19 / 46%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 600px;
+}
+.order .thumbnail i{
+    display: block;
+  font-size: 25px;
+  color: #ff6600;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff; 
+}
+.order .thumbnail i:hover{
+  color: rgba(255, 120, 0, 0.3);
+  transition: all 0.5s;
+}
+.order .thumbnail a{
+  text-decoration: none;
+  display: block;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.order .item h6 {
+    font-family: "Pacifico", cursive;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.order .order-right p{
+  font-size: 18px;
+  color: #ffffff;
+}
+.order .item h3 {
+    font-weight: 600;
+    font-size: 40px;
+}
+/****************************************Footer****************************************/
+footer {
+    background-color: #000000;
+}
+footer .col .item {
+    color: #ffffff;
+}
+footer .row .item p,
+footer .item ul li a,
+footer .license {
+    text-decoration: none;
+    font-size: 17px;
+    color: #a5a2a1;
+}
+footer .row .item p {
+    padding-right: 35px;
+}
+footer .row .item h3 a,
+footer .row .item h4 {
+  font-weight: 700;
+  color: #ffffff;
+}
+footer .row .item h3 a:hover,
+footer .row .item a:hover {
+  color: #ff6600;
+  transition: all 0.5s;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+}
+footer .row .item .socialnetwork a i {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 16px;
+  color: #ff6600;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+footer .row .item .socialnetwork a i:hover {
+  background-color: #ff6600;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+footer .item input {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+footer .row input[type="email"]:focus {
+  border: 1px solid #ff6600 !important;
+  box-shadow: none;
+}
+
+footer .row .item .btn {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ff6600;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+footer .item .btn:hover {
+  opacity: 0.8;
+}
+footer .license {
+  justify-content: space-between;
+}
+footer .license a {
+  text-decoration: none;
+  color: #a5a2a1;
+  margin-right: 30px;
+}
+footer .copyright-right a:hover,
+footer .license .copyright-left .special {
+  color: #ff6600;
+}
+footer .license .special:hover {
+  color: #ffffff;
+}
+/****************************************End Footer****************************************/
+
+/* desktop */
+@media screen and (max-width: 1200px) {
+}
+/* tablet */
+@media screen and (max-width: 992px) {
+  header {
+    min-height: 260px;
+  }
+  .header .header-right .navbar-plus,
+  .header .header-right .research {
+    display: none;
+  }
+  .header .navbar-toggler {
+    display: block;
+  }
+  .header .switch-mode {
+    line-height: 108px;
+  }
+}
+/* điện thoại (xoay ngang) */
+@media screen and (max-width: 768px) {
+}
+/* điện thoại (xoay dọc) */
+@media screen and (max-width: 576px) {
+}

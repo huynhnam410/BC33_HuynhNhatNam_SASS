@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            color: blue;
+            background-color: bisque;
+        }
+
+        .tab-pane{
+            display: none;
+        }
+
+        .show{
+            display: block;
+        }
+
+        .active{
+            color: blueviolet;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    
+<input id="txtUsername" type="text" placeholder="username">
+<input id="txtPassword" type="password" placeholder="password">
+<button onclick="login()">Đăng nhập</button>
+
+<h1 id="title">à nhòn xê ô</h1>
+<button onclick="changetext()">phăc du</button>
+<button onmouseenter="changetext2()">hello</button>
+
+<br>
+
+<br>
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+<div>
+    <button data-target="animeTab"  onclick="changeTab(event)"  id="btnAnime" class="active">anime</button>
+    <button data-target="dramaTab" onclick="changeTab(event)"  id="btnDrama">drama</button>
+    <button data-target="romanceTab" onclick="changeTab(event)"  id="btnRomance">romance</button>
+</div>
+
+<div id="animeTab" class="tab-pane show">
+    <h2>naruto</h2>
+    <h2>dragonball</h2>
+    <h2>one piece</h2>
+</div>
+
+<div id="dramaTab" class="tab-pane">
+    <h2>the heris</h2>
+    <h2>the d of the sun</h2>
+    <h2>war</h2>
+</div>
+<div  id="romanceTab" class="tab-pane">
+    <h2>titanic</h2>
+    <h2>the flower boys</h2>
+</div>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<div>
+    <h2>tổng tiền thanh toán</h2>
+<input id="bill" type="text" placeholder="Tổng tiền">
+
+<h2>tip nhiu ku</h2>
+<select name="" id="selectip">
+    <option value="10">10%</option>
+    <option value="20">20%</option>
+    <option value="30">30%</option>
+    <option value="40">40%</option>
+</select>
+<br>
+<h2>share nhiu đứa??</h2>
+<input id="person" type="text" placeholder="số người">người
+<br>
+<button onclick="calcMoney(event)">tính tiền</button>
+
+</div>
+
+
+
+
+    <script src="./js4.js"></script>
+</body>
+</html>

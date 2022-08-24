@@ -1,0 +1,17 @@
+//body
+@import './Base/customize';
+
+//Helper
+@import './Helpers/mixin';
+@import './Helpers/Variables';
+
+//components
+@import './Components/button';
+@import './Components/card';
+
+//layout
+@import './Layout/header';
+@import './Layout/carousel';
+@import './Layout/teachers';
+@import  './Layout/course';
+@import './Layout/footer';

@@ -1,0 +1,239 @@
+.footer {
+    margin-top: -2px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      color: $color-c2;
+  
+      @media only screen and (max-width: 1020px) {
+        display: block;
+        // flex-wrap: wrap;
+        width: 95%;
+      }
+      @media only screen and (max-width: 765px) {
+        display: block;
+        width: 95%;
+      }
+  
+      .left {
+        width: 65%;
+        display: flex;
+        justify-content: space-around;
+        
+        @media only screen and (max-width: 1020px) {
+          width: 100%;
+          display: flex;
+          margin-bottom: 50px;
+          // flex-wrap: wrap;
+        };
+        @media only screen and (max-width: 765px) {
+          display: block;
+        }
+        
+  
+        .contact {
+          @media only screen and (max-width: 1020px) {
+            width: 50%;
+          }
+          @media only screen and (max-width: 765px) {
+            margin-bottom: 50px;
+          }
+  
+          .contact-title {
+            h2 {
+              font-size: $fs-xl;
+              font-weight: $fw-bold;
+              margin-bottom: 25px;
+            }
+            @media only screen and (max-width: 765px) {
+              margin-bottom: -5px;
+            }
+          }
+          .contact-info {
+            margin-bottom: 25px;
+  
+            .contact-info-address {
+              margin-bottom: 10px;
+  
+              .addres-icon {
+                i {
+                  font-size: $fs-sm1;
+                  margin-right: 5px;
+                }
+              }
+              span {
+                font-size: $fs-sm1;
+              }
+            }
+            .contact-info-phone {
+              margin-bottom: 10px;
+  
+              .phone-icon {
+                i {
+                  font-size: $fs-sm1;
+                  margin-right: 5px;
+                }
+              }
+              span {
+                font-size: $fs-sm1;
+              }
+            }
+            .contact-info-workingTime {
+              .workingTime-icon {
+                i {
+                  font-size: $fs-sm1;
+                  margin-right: 5px;
+                }
+              }
+              span {
+                font-size: $fs-sm1;
+              }
+            }
+          }
+          .contact-icon {
+            @media only screen and (max-width: 765px) {
+              margin-top: -20px;
+            }
+            a {
+              text-decoration: none;
+              i {
+                font-size: $fs-sm1;
+                color: $color-c2;
+                margin-right: 10px;
+                &:hover {
+                  color: $color-c1;
+                }
+              }
+            }
+          }
+        }
+        .link {
+          @media only screen and (max-width: 1020px) {
+            width: 50%;
+          }
+          @media only screen and (max-width: 765px) {
+            margin-bottom: 30px;
+          }
+          .link-title {
+            h2 {
+              font-size: $fs-xl;
+              font-weight: $fw-bold;
+              margin-bottom: 25px;
+              @media only screen and (max-width: 765px) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+          .link-item {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            a {
+              text-decoration: none;
+              color: $color-c2;
+              font-size: $fs-sm1;
+              border-bottom: 1px solid $color-c6;
+              padding: 5px 0px;
+            }
+          }
+        }
+        .about {
+          @media only screen and (max-width: 1020px) {
+            width: 50%;
+          }
+          @media only screen and (max-width: 765px) {
+            margin-bottom: 30px;
+          }
+          .about-title {
+            h2 {
+              font-size: $fs-xl;
+              font-weight: $fw-bold;
+              margin-bottom: 25px;
+              @media only screen and (max-width: 765px) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+          .about-item {
+            display: flex;
+            flex-direction: column;
+  
+            a {
+              text-decoration: none;
+              color: $color-c2;
+              font-size: $fs-sm1;
+              border-bottom: 1px solid $color-c6;
+              padding: 5px 0px;
+              border-bottom-width: 80%;
+            }
+          }
+        }
+      }
+      .right {
+        width: 25%;
+        @media only screen and (max-width: 765px) {
+          width: 100%;
+          align-items: center;
+        }
+        .subscribe {
+          .subscribe-title {
+            h2 {
+              font-size: $fs-xl;
+              font-weight: $fw-bold;
+              margin-bottom: 25px;
+            }
+          }
+          .subscribe-item {
+            .subscribe-item-input {
+              input {
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background-color: $color-c3;
+                color: $color-c2;
+                padding: 10px 25px;
+                border-radius: 30px;
+                margin-bottom: 20px;
+                text-align: center;
+                &::placeholder {
+                  color: $color-c2;
+                }
+                &:focus {
+                  outline: none;
+                }
+                @media only screen and (max-width: 765px) {
+                  padding: 10px 70px;
+                }
+              }
+            }
+            .subscribe-item-button {
+              button {
+                padding: 12px 78px;
+                font-size: $fs-sm1;
+                letter-spacing: 1px;
+                font-weight: $fw-semibold;
+                border-radius: 30px;
+                border: none;
+                &:hover {
+                  background-color: $color-c3;
+                  color: $color-c2;
+                  border: 1px solid $color-c2;
+                  transition: ease-out;
+                  transition-duration: 0.3s;
+                  
+                  
+                }
+                @media only screen and (max-width: 765px) {
+                  padding: 12px 123px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
